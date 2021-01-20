@@ -168,19 +168,28 @@ export default context => {
 });
 
 test("Gets Modified App", t => {
-    const result = config.appConfig("foo", {app: "bar", client: "bar"});
-    const expected = `bar`;
+    const result = config.appConfig("foo", 
+        { app: (foo) => `${foo}-bar`, server: (foo) => `${foo}-bar`, client: (foo) => `${foo}-bar`
+    });
+    const foo = 'foo';
+    const expected = foo + `-bar`;
     t.is(result.app, expected);
 });
 
 test("Gets Modified Client", t => {
-    const result = config.appConfig("foo", {app: "bar", client: "bar"});
-    const expected = `bar`;
+    const result = config.appConfig("foo", 
+        { app: (foo) => `${foo}-bar`, server: (foo) => `${foo}-bar`, client: (foo) => `${foo}-bar`
+    });
+    const foo = 'foo';
+    const expected = foo + `-bar`;
     t.is(result.client, expected);
 });
 
 test("Gets Modified Server", t => {
-    const result = config.appConfig("foo", {app:"qux", client: "bar"});
-    const expected = `qux`;
+    const result = config.appConfig("foo", 
+        { app: (foo) => `${foo}-bar`, server: (foo) => `${foo}-bar`, client: (foo) => `${foo}-bar`
+    });
+    const foo = 'foo';
+    const expected = foo + `-bar`;
     t.is(result.server, expected);
 });
