@@ -1,7 +1,7 @@
 {
-    "name": "vue-pronto",
-    "version": "2.3.0",
-    "description": "Seriously fast vue server renderer",
+    "name": "@andoniabedul/vue-pronto",
+    "version": "1.0.0",
+    "description": "Seriously fast vue server renderer (forked from vue-pronto)",
     "main": "lib/index.js",
     "files": [
         "lib/**/*.js",
@@ -144,11 +144,11 @@
         "example",
         "tests"
     ],
-    "author": "Daniel Cherubini",
+    "author": "Andoni Abedul",
     "license": "ISC",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/express-vue/vue-pronto.git"
+        "url": "git+https://github.com/andoniabedul/vue-pronto"
     },
     "keywords": [
         "vue",
@@ -160,7 +160,7 @@
         "io"
     ],
     "bugs": {
-        "url": "https://github.com/express-vue/vue-pronto/issues"
+        "url": "https://github.com/andoniabedul/vue-pronto/issues"
     },
-    "homepage": "https://github.com/express-vue/vue-pronto#readme"
+    "homepage": "https://github.com/andoniabedul/vue-pronto#readme"
 }
